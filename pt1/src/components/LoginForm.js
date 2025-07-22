@@ -8,20 +8,31 @@ function LoginForm({ setUser }) {
   const [password, setPassword] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [showError, setShowError] = useState(false);
+  const [emptyFields, setEmptyFields] = useState(false);
 
   const handleLogin = async () => {
+    // Kiểm tra nếu username hoặc password rỗng
+    if (!username.trim() || !password.trim()) {
+      setEmptyFields(true);
+      setShowError(false);
+      return;
+    }
+
     try {
       const res = await api.get(`/UserAccounts?username=${username}&password=${password}`);
       if (res.data.length > 0) {
         setUser(res.data[0]);
         setShowModal(true);
         setShowError(false);
+        setEmptyFields(false);
       } else {
         setShowError(true);
+        setEmptyFields(false);
       }
     } catch (err) {
       console.error(err);
       setShowError(true);
+      setEmptyFields(false);
     }
   };
 
@@ -57,6 +68,12 @@ function LoginForm({ setUser }) {
               Login
             </Button>
           </div>
+
+          {emptyFields && (
+            <Alert variant="warning" className="mt-3 text-center">
+              Please enter both username and password!
+            </Alert>
+          )}
 
           {showError && (
             <Alert variant="danger" className="mt-3 text-center">

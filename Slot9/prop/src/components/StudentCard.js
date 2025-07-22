@@ -13,9 +13,10 @@ const StudentCard = ({ student }) => {
         <Card.Title>{student.name}</Card.Title>
         <Card.Text>Age: {student.age}</Card.Text>
     <div className="d-flex justify-content-start">
-        <Button variant="primary">Edit</Button>
-    </div>
+     <Button variant="primary">Edit</Button>
+   </div>
     </Card.Body>
+
     </Card>
   );
 };

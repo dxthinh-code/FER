@@ -19,12 +19,20 @@ function LaptopDetail() {
   return (
     <Container className="p-4 d-flex justify-content-center">
       <Card className="p-3" style={{ maxWidth: '600px', width: '100%' }}>
-        <Card.Img
-          variant="top"
-          src={laptop.image}
-          alt={`${laptop.brand} ${laptop.model}`}
-          style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
-        />
+        <div className="text-center">
+          <img
+            src={laptop.image}
+            alt={`${laptop.brand} ${laptop.model}`}
+            style={{
+              maxWidth: '100%',
+              width: '100%',
+              height: 'auto',
+              maxHeight: '200px',
+              objectFit: 'contain',
+              borderRadius: '8px'
+            }}
+          />
+        </div>
         <Card.Body>
           <Card.Title>{laptop.brand} {laptop.model}</Card.Title>
           <Card.Text>
