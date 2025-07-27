@@ -1,0 +1,83 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Honda Winner X",
+      "description": "A sporty underbone motorbike with aggressive design and powerful engine.",
+      "price": "45.000.000",
+      "currentPrice": "41.500.000",
+      "image": "winnerx.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Yamaha Exciter 155",
+      "description": "A performance-focused motorbike suitable for daily use and racing enthusiasts.",
+      "price": "42.000.000",
+      "currentPrice": "39.000.000",
+      "image": "exciter155.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Piaggio Liberty ABS",
+      "description": "A premium scooter with stylish European design and ABS braking system.",
+      "price": "50.000.000",
+      "currentPrice": "47.000.000",
+      "image": "liberty.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Suzuki Raider R150",
+      "description": "A lightweight and agile motorbike ideal for city commuting.",
+      "price": "38.000.000",
+      "currentPrice": "35.000.000",
+      "image": "raider.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "username": "thayo",
+      "password": "matkhau123"
+    },
+    {
+      "id": "92f4",
+      "username": "user3",
+      "password": "12345"
+    },
+    {
+      "id": "4677",
+      "username": "user4",
+      "password": "12345"
+    },
+    {
+      "id": "9766",
+      "username": "user5",
+      "password": "123"
+    },
+    {
+      "id": "14cf",
+      "username": "user6",
+      "password": "12345"
+    },
+    {
+      "id": "db6e",
+      "username": "user",
+      "password": "1234567"
+    },
+    {
+      "id": "3761",
+      "username": "thinh",
+      "password": "123"
+    },
+    {
+      "id": "e322",
+      "username": "long",
+      "password": "123"
+    }
+  ]
+}
